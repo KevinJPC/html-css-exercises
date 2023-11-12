@@ -1,0 +1,41 @@
+/* caveat regular */
+@font-face {
+  font-family: caveat;
+  src: url('./caveat/Caveat-Regular.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* caveat bold */
+@font-face {
+  font-family: caveat;
+  src: url('./caveat/Caveat-Bold.ttf');
+  font-weight: bold;
+  font-style: normal;
+}
+
+/* caveat ... */
+
+body{
+  padding: 1em;
+  font-size: 2rem;
+  font-family: Caveat, sans-serif;
+}
+
+/* inputs and buttons do not inherit the font-size by default */
+/* input, button {
+  font-size: inherit;
+} */
+
+p {
+  /* text-decoration: underline; */
+  /* text-transform: capitalize; */
+  /* text-align: justify; */
+  /* text-indent: 2em; */
+  line-height: 1.5em;
+  /* letter-spacing: .05em; */
+  /* word-spacing: .1em; */
+  /* font-weight: bold; */
+  /* font-style: italic; */
+
+}
