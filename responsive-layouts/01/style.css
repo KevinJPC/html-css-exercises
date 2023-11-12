@@ -2,28 +2,47 @@
 - avoid heights
 - avoid using fixed widths
 - the most of the time you don't even need to set a width on a child
+- do not use absolute values for typography
+- you may use em for paddings and margins to keep thouse relate to the font size element
+- you may use ch for limit the number of character that a line paragraph shoud have. 
+- do not change the font size on the html or root element
+- avoid using 100vw
 */
 
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
   margin: 0;
   font-family: sans-serif;
+
+  border: 5px solid #000000;
+  background: #C0FFEE;
+  /* font-size: 16px; */
+
+  color: #000000;
+
+  min-height: 100vh;
+
 }
 
-.container {
-  background: #23424a;
-  color: white;
+header, main {
+  font-size: 1.5rem;
 
-  width: 80%;
+  padding: .5em;
+  margin: 1em 0;
+
+  border: 2px dashed #ffffff;
+  background-color: #000000;
+  outline: 5px solid lightblue;
+  outline-offset: 5px;
+}
+
+section {
+  color: #ffffff;
   margin: 0 auto;
-
-  padding: 2em;
-  /* height: 300px; */
-}
-
-.intro-content {
-  width: 50%;
+  max-width: 50ch;
 }
