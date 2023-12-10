@@ -29,7 +29,8 @@ body {
 
 }
 
-header, main {
+header,
+main {
   font-size: 1.5rem;
 
   padding: .5em;
@@ -45,4 +46,5 @@ section {
   color: #ffffff;
   margin: 0 auto;
   max-width: 50ch;
+  padding: 1em;
 }

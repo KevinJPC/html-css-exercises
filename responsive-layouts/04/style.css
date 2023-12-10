@@ -1,0 +1,28 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+:root {
+  /* font-size: .875rem; */
+}
+
+.container {
+  max-width: 750px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.intro {
+  padding: 3em 0;
+  background: #23424a;
+  color: white;
+}
+
+.intro-content {
+  width: 50%;
+}
