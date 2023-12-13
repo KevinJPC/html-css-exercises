@@ -10,18 +10,28 @@
 
 <body>
 
-
+  <!-- HEADER -->
   <header class="header bg-blue--100">
-    <nav class="container nav">
-      <ul class="nav__list">
-        <li class="nav__item"><a class="nav__link" href="#">HOME</a></li>
-        <li class="nav__item"><a class="nav__link" href="#">ABOUT</a></li>
-        <li class="nav__item"><a class="nav__link" href="#">CONTACT</a></li>
-        <li class="nav__item"><a class="nav__link" href="#">SIGN IN</a></li>
-        <li class="nav__item"><a class="nav__link btn btn--sm bg-white" href="#">SIGN UP</a></li>
-      </ul>
-    </nav>
 
+    <!-- NAVBAR -->
+    <div class="container navbar">
+      <img class="logo" src="./logo.svg" alt="conquering responsive layouts logo">
+      <nav class="nav nav--sections">
+        <ul class="nav__list">
+          <li class="nav__item"><a class="nav__link" href="#">HOME</a></li>
+          <li class="nav__item"><a class="nav__link" href="#">ABOUT</a></li>
+          <li class="nav__item"><a class="nav__link" href="#">CONTACT</a></li>
+        </ul>
+      </nav>
+      <nav class="nav nav--sign">
+        <ul class="nav__list">
+          <li class="nav__item"><a class="nav__link" href="#">SIGN IN</a></li>
+          <li class="nav__item"><a class="nav__link btn btn--sm bg-white" href="#">SIGN UP</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- LANDING -->
     <div class="container landing">
       <img class="landing__img" src="https://picsum.photos/id/881/700/500" alt="a jellyfish in the ocean">
       <div class="landing__content">
@@ -41,7 +51,10 @@
     </div>
   </header>
 
+  <!-- MAIN -->
   <main>
+
+    <!-- SECTION 1 -->
     <section class="section-1 container">
       <ul class="list">
         <li class="list__item">
@@ -71,6 +84,7 @@
       </ul>
     </section>
 
+    <!-- SECTION 2 -->
     <section class="section-2 bg-blue-200">
       <ul class="list container d-flex">
         <li class="list__item">
@@ -92,6 +106,7 @@
       </ul>
     </section>
 
+    <!-- SECTION 3 -->
     <section class="section-3 container">
       <div class="section-3__content">
         <h1 class="section-3__title">Quality designs made custom, on demand,
@@ -156,7 +171,6 @@
       </div>
     </section>
   </main>
-
 </body>
 
 </html>

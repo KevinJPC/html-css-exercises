@@ -1,3 +1,7 @@
+/*******************************/
+/* DEFAULT STYLES AND CSS RESET */
+/*******************************/
+
 *,
 *::before,
 *::after {
@@ -8,7 +12,7 @@
 
 img {
   width: 100%;
-  display: block;
+  /* display: block; */
 }
 
 a {
@@ -25,17 +29,16 @@ p+p {
   margin-top: 1em;
 }
 
-/* body,
-h1,
-p {
-  margin: 0;
-  padding: 0;
-} */
-
 :root {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: 1.25rem;
 }
+
+/*******************************/
+/* UTILITY CLASSES */
+/* It's a good idea to use margin and sometimes padding as utility classes with BEM 
+or any other property which do not affect the component itself, it makes everything more reusable */
+/*******************************/
 
 .padding-y-2 {
   padding: 2em 0;
@@ -84,6 +87,10 @@ p {
   margin: 0 auto;
 }
 
+/*******************************/
+/* BUTTON */
+/*******************************/
+
 .btn {
   max-width: 350px;
 
@@ -106,6 +113,10 @@ p {
   padding: .2em 1em;
 }
 
+/*******************************/
+/* HEADER */
+/*******************************/
+
 .header {
   display: flex;
   flex-direction: column;
@@ -113,6 +124,60 @@ p {
   min-height: 100svh;
   padding: 2em 0;
 }
+
+/*******************************/
+/* NAVBAR */
+/*******************************/
+
+.navbar {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  gap: 1rem;
+
+  margin-bottom: 2rem;
+}
+
+/*******************************/
+/* LOGO */
+/*******************************/
+
+.logo {
+  width: auto;
+}
+
+/*******************************/
+/* NAV */
+/*******************************/
+
+.nav {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 1rem;
+}
+
+.nav__list {
+  width: fit-content;
+
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+
+  gap: 1rem;
+}
+
+.nav--sections {
+  margin: 0 auto;
+}
+
+.nav--sign {
+  /* margin-left: auto; */
+}
+
+/*******************************/
+/* LANDING */
+/*******************************/
 
 .landing {
   display: flex;
@@ -163,11 +228,19 @@ p {
   /* font-size: 2rem; */
 }
 
+/*******************************/
+/* SECTIONS */
+/*******************************/
+
 .section-1,
 .section-2,
 .section-3 {
   padding: 2em 0;
 }
+
+/*******************************/
+/* SECTION-3 */
+/*******************************/
 
 .section-3 {
   display: flex;
@@ -184,6 +257,10 @@ p {
   margin-bottom: 1rem;
 }
 
+/*******************************/
+/* LIST */
+/*******************************/
+
 .list {
   display: flex;
   flex-wrap: wrap;
@@ -199,36 +276,6 @@ p {
   padding: 2em 0;
   flex-direction: column;
 }
-
-
-.d-flex {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-}
-
-.d-flex--col {
-  flex-direction: column;
-}
-
-.flex-1 {
-  flex: 1;
-}
-
-.flex-2 {
-  flex: 2;
-}
-
-/* .flex-250 {} */
-
-.flex-b-300 {
-  flex-basis: 300px;
-}
-
-.flex-b-100 {
-  flex-basis: 100px;
-}
-
 
 .list__item {
   /* 
@@ -247,21 +294,6 @@ p {
   flex-shrink: 1;
   flex-basis: min-content; */
   /* flex: 1 1 150px; */
-}
-
-.nav {
-  margin-bottom: 2rem;
-}
-
-.nav__list {
-  width: fit-content;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-
-  gap: 1rem;
 }
 
 .list__title {
