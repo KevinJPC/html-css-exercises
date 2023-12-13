@@ -9,21 +9,32 @@
 </head>
 
 <body>
-  <header class="section section--full-h bg-blue--100 d-flex d-flex--col padding-y-2">
-    <div class="container d-flex landing">
-      <img class="landing__img flex-1 flex-b-300" src="https://picsum.photos/id/881/700/500"
-        alt="a jellyfish in the ocean">
-      <div class="content flex-2 flex-b-300">
+
+
+  <header class="header bg-blue--100">
+    <nav class="container nav">
+      <ul class="nav__list">
+        <li class="nav__item"><a class="nav__link" href="#">HOME</a></li>
+        <li class="nav__item"><a class="nav__link" href="#">ABOUT</a></li>
+        <li class="nav__item"><a class="nav__link" href="#">CONTACT</a></li>
+        <li class="nav__item"><a class="nav__link" href="#">SIGN IN</a></li>
+        <li class="nav__item"><a class="nav__link btn btn--sm bg-white" href="#">SIGN UP</a></li>
+      </ul>
+    </nav>
+
+    <div class="container landing">
+      <img class="landing__img" src="https://picsum.photos/id/881/700/500" alt="a jellyfish in the ocean">
+      <div class="landing__content">
         <h1 class="landing__title">
           Responsive layouts don’t have
           to be a struggle
         </h1>
-        <p class="landing__body margin-t-1 margin-b-2">
+        <p class="landing__body">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
           tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
           veniam.
         </p>
-        <a href="#" class="btn">
+        <a href="#" class="btn bg-cyan">
           Learn more...
         </a>
       </div>
@@ -31,8 +42,8 @@
   </header>
 
   <main>
-    <section class="section container padding-y-4">
-      <ul class="list d-flex">
+    <section class="section-1 container">
+      <ul class="list">
         <li class="list__item">
           <h1 class="list__title list__title--purple margin-b-1">
             Cheap
@@ -60,10 +71,10 @@
       </ul>
     </section>
 
-    <section class="section bg-blue-200 padding-y-4">
+    <section class="section-2 bg-blue-200">
       <ul class="list container d-flex">
         <li class="list__item">
-          <h1 class="list__title margin-b-1">
+          <h1 class="list__title">
             Cheap
           </h1>
           <p class="list__body">
@@ -71,7 +82,7 @@
           </p>
         </li>
         <li class="list__item">
-          <h1 class="list__title margin-b-1">
+          <h1 class="list__title">
             Quick
           </h1>
           <p class="list__body">
@@ -81,9 +92,9 @@
       </ul>
     </section>
 
-    <section class="section container d-flex padding-y-4">
-      <div class="flex-2 flex-b-300 padding-y-2">
-        <h1 class="margin-b-1">Quality designs made custom, on demand,
+    <section class="section-3 container">
+      <div class="section-3__content">
+        <h1 class="section-3__title">Quality designs made custom, on demand,
           just for you
         </h1>
         <p>
@@ -102,10 +113,11 @@
           minim veniam.
         </p>
       </div>
-      <div class="flex-1 flex-b-300 bg-blue-200">
-        <ul class="list list--aside d-flex d-flex--col padding-y-2">
+      <!--  -->
+      <div class="section-3__content bg-blue-200">
+        <ul class="list list--aside">
           <li class="list__item">
-            <h1 class="list__title margin-b-1">
+            <h1 class="list__title">
               Cheap
             </h1>
             <p class="list__body">
@@ -117,7 +129,7 @@
             </p>
           </li>
           <li class="list__item">
-            <h1 class="list__title margin-b-1">
+            <h1 class="list__title">
               Quick
             </h1>
             <p class="list__body">
@@ -129,7 +141,7 @@
             </p>
           </li>
           <li class="list__item">
-            <h1 class="list__title margin-b-1">
+            <h1 class="list__title">
               Quality
             </h1>
             <p class="list__body">
