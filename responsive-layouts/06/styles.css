@@ -1,0 +1,191 @@
+/*---------------------
+        CSS RESET
+-----------------------*/
+
+*,
+*::before,
+*::after {
+  box-sizing: 0;
+  /* min-width: 0; */
+}
+
+body {
+  margin: 0;
+}
+
+h1,
+h2,
+p,
+span {
+  margin: 0;
+}
+
+img {
+  width: 100%
+}
+
+/* ----------------------
+        DEFAULTS
+------------------------ */
+
+h2 {
+  margin-bottom: 1.5rem;
+  font-size: var(--font-lg);
+  font-family: Playfair;
+  font-weight: 900;
+}
+
+body {
+  font-size: var(--font-md);
+  font-family: Roboto;
+  font-weight: 500;
+}
+
+/* --------------------
+        FONTS
+----------------------- */
+
+@font-face {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  src: local('Roboto-Light'),
+    local('Roboto Light'),
+    url('./assets/fonts/roboto/Roboto-Light.ttf') format('TrueType');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  src: local('Roboto-Regular'),
+    local('Roboto Regular'),
+    url('./assets/fonts/roboto/Roboto-Regular.ttf') format('TrueType');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Playfair;
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: local('Playfair_9pt-Black'),
+    local('Playfair_9pt Black'),
+    url('./assets/fonts/playfair/Playfair_9pt-Black.ttf') format('TrueType');
+}
+
+/* ----------------
+      VARIABLES
+------------------- */
+
+:root {
+  /* COLORS */
+  --color-white: #ffffff;
+  --color-eggshell: #f3eed9;
+  --color-charleston-green: #222C2A;
+  --color-bole: #824936;
+
+  /* FONT SIZES */
+  --font-xl: 3.75rem;
+  --font-lg: 2.25rem;
+  --font-md: 1.25rem;
+  --font-sm: 1.125rem
+}
+
+/* UTILITY */
+
+.padding-y-2 {
+  padding: 2em 0;
+}
+
+.container {
+  max-width: 1128px;
+  margin: 0 auto;
+  width: 90%;
+}
+
+.bg-color-white {
+  background-color: var(--color-white);
+  color: var(--color-charleston-green);
+
+  h2 {
+    color: var(--color-bole)
+  }
+}
+
+.bg-color-charleston-green {
+  background-color: var(--color-charleston-green);
+  color: var(--color-white);
+
+  h2 {
+    color: var(--color-eggshell)
+  }
+}
+
+.bg-color-bole {
+  background-color: var(--color-bole);
+  color: var(--color-white);
+
+  h2 {
+    color: var(--color-eggshell);
+  }
+}
+
+/* STYLES COMPONENTS */
+
+.header {
+  background-color: var(--color-eggshell);
+  min-height: 660px;
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.hero {}
+
+.hero__title {
+  font-size: var(--font-xl);
+  font-family: Playfair;
+  font-weight: 900;
+  color: var(--color-bole);
+  text-align: center;
+
+  text-wrap: balance;
+}
+
+.hero__subtitle {
+  display: block;
+
+  font-size: var(--font-sm);
+  font-family: Roboto;
+  font-weight: 300;
+  text-align: center;
+}
+
+.section {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  gap: 2em;
+}
+
+.section__content {
+  flex: 1 1 300px;
+}
+
+.section__img {
+  flex: 1 1 300px;
+  align-self: flex-start;
+}
+
+.section__body {
+  display: flex;
+  gap: 1em;
+  flex-flow: row wrap;
+}
+
+.section__p {
+  flex: 1 1 40ch;
+}
