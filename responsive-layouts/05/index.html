@@ -11,20 +11,28 @@
 <body>
 
   <!-- HEADER -->
-  <header class="header bg-blue--100">
+  <header class="header bg-blue-100">
 
     <!-- NAVBAR -->
     <div class="container navbar">
-      <img class="logo" src="./logo.svg" alt="conquering responsive layouts logo">
-      <nav class="nav nav--sections">
-        <ul class="nav__list">
+
+      <div class="navbar__actions">
+        <img class="logo" src="./logo.svg" alt="conquering responsive layouts logo">
+        <button id="menu" class="btn bg-blue-200 menu">
+          <svg width="40" height="40" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+            stroke-width="1.5" stroke="currentColor" class="hamburguer">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+          </svg>
+        </button>
+      </div>
+
+      <nav id="nav" class="nav">
+        <ul class="nav__list nav__list--sections">
           <li class="nav__item"><a class="nav__link" href="#">HOME</a></li>
           <li class="nav__item"><a class="nav__link" href="#">ABOUT</a></li>
           <li class="nav__item"><a class="nav__link" href="#">CONTACT</a></li>
         </ul>
-      </nav>
-      <nav class="nav nav--sign">
-        <ul class="nav__list">
+        <ul class="nav__list nav__list--sign">
           <li class="nav__item"><a class="nav__link" href="#">SIGN IN</a></li>
           <li class="nav__item"><a class="nav__link btn btn--sm bg-white" href="#">SIGN UP</a></li>
         </ul>
@@ -171,6 +179,7 @@
       </div>
     </section>
   </main>
+  <script type="module" src="./main.js" />
 </body>
 
 </html>
